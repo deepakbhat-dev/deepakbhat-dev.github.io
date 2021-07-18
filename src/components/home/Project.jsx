@@ -36,7 +36,6 @@ const Project = ({ heading, username, length, specific, ignore }) => {
         repoList = repoList.filter((repo) => (
           !ignore.includes(repo.name) 
         ));
-        debugger;
       } catch (error) {
         console.error(error.message);
       }

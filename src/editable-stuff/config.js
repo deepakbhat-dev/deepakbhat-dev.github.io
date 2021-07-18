@@ -13,10 +13,12 @@ const mainBody = {
   message: "Passionate to contribute to the world of technology. ",
   icons: [
     {
+      description: "GitHub",
       image: "fa-github",
       url: "https://github.com/deepakbhat-dev"
     },
     {
+      description: "LinkedIn",
       image: "fa-linkedin",
       url: "https://www.linkedin.com/in/deepakbhat-dev/"
     }
@@ -44,6 +46,21 @@ const about = {
     "Graduate of 2K18 with an engineering degree in Computer Science, adding value at present as a full-time software developer. Most passionate about giving back to the software community. Strongly believe that software is the most powerful tool in the present world to make life better and easier. In my free time, I mostly upskill or travel.",
   resume: "https://drive.google.com/file/d/121iHvwSPJcDJUolAYZQcosC-2Xlpe3LE/view?usp=sharing"
 };
+
+/*
+  RESUME Hover button
+  Internally uses mainBody.icons and about.resume to display options
+  For Resume either provide link to your resume or import from "editable-stuff" directory
+    i.e resume: require("../editable-stuff/resume.pdf"), or
+      resume: "https://drive.google.com/file/d/121iHvwSPJcDJUolAYZQcosC-2Xlpe3LE/view?usp=sharing"
+*/
+const resumeHover = {
+  show: true,
+  icon: {
+    description: "Resume",
+    image: "fa-user-tie"
+  }
+}
 
 /*
   PROJECTS Section -
@@ -130,11 +147,13 @@ const experiences = {
   heading: "Professional Experience",
   data: [
     {
+      company: 'cerner',
       role: 'Software Engineer I',
       companylogo: require('../assets/img/cerner.png'),
       date: 'Sept 2019 – Present'
     },
     {
+      company: 'mphasis',
       role: 'Associate Software Engineer',
       companylogo: require('../assets/img/mphasis.png'),
       date: 'Oct 2018 – Aug 2019'
@@ -147,4 +166,4 @@ const experiences = {
 //   show: false
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences };
+export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences, resumeHover };

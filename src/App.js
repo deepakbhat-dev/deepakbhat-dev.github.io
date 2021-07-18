@@ -8,7 +8,8 @@ import {
   leadership,
   skills,
   getInTouch,
-  experiences
+  experiences,
+  resumeHover
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
@@ -20,8 +21,8 @@ import Skills from "./components/home/Skills";
 // import BlogPost from "./components/blog/BlogPost";
 import GetInTouch from "./components/home/GetInTouch.jsx";
 import Leadership from "./components/home/Leadership.jsx";
-
 import Experience from "./components/home/Experience";
+import ResumeHover from "./components/home/ResumeHover";
 
 const Home = React.forwardRef((props, ref) => {
   return (
@@ -85,6 +86,9 @@ const App = () => {
       <Route path="/" exact component={() => <Home ref={titleRef} />} />
       {/* {false && <Route path="/blog" exact component={Blog} />}
       {false && <Route path="/blog/:id" component={BlogPost} />} */}
+      {resumeHover.show && (
+        <ResumeHover icons={mainBody.icons} resume={about.resume} resumeIcon={resumeHover.icon} />
+      )}
       <Footer>
         {getInTouch.show && (
           <GetInTouch
