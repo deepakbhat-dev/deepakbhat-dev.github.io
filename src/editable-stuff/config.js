@@ -32,7 +32,7 @@ const mainBody = {
         i.e: profilePictureLink: "",
     For Resume either provide link to your resume or import from "editable-stuff" directory
      i.e resume: require("../editable-stuff/resume.pdf"), or
-         resume: "https://drive.google.com/file/d/1bAnEWRO29i813Sb97w6BoGqOosaKVCkd/view?usp=sharing"
+         resume: "https://drive.google.com/file/d/121iHvwSPJcDJUolAYZQcosC-2Xlpe3LE/view?usp=sharing"
 */
 
 const about = {
@@ -41,8 +41,8 @@ const about = {
   imageLink: require("../editable-stuff/deepakbhat.jpeg"),
   imageSize: 350,
   message:
-    "Graduate of 2K18 from with a degree in Computer Science, adding value as a full-time software developer currently. Most passionate about giving back to the software community. I believe that software is the most powerful tool in the present world to make life better and easier for everyone. On my free time, I mostly upskill or travel.",
-  resume: "https://drive.google.com/file/d/1bAnEWRO29i813Sb97w6BoGqOosaKVCkd/view?usp=sharing"
+    "Graduate of 2K18 with an engineering degree in Computer Science, adding value at present as a full-time software developer. Most passionate about giving back to the software community. Strongly believe that software is the most powerful tool in the present world to make life better and easier. In my free time, I mostly upskill or travel.",
+  resume: "https://drive.google.com/file/d/121iHvwSPJcDJUolAYZQcosC-2Xlpe3LE/view?usp=sharing"
 };
 
 /*
@@ -51,6 +51,8 @@ const about = {
       i.e: reposLength: 0,
     If you want to display specfic projects, add the repository names,
       i.e ["repository-1", "repo-2"]
+    If you want to ignore specfic projects, add the repository names,
+      i.e ["repository-1", "repo-2"]
 */
 
 const repos = {
@@ -58,7 +60,8 @@ const repos = {
   heading: "Recent Projects",
   gitHubUsername: "deepakbhat-dev",
   reposLength: 6,
-  specificRepos: []
+  specificRepos: [],
+  ignoreRepos: ['deepakbhat-dev', 'deepakbhat-dev.github.io'],
 };
 
 // LEADERSHIP Section

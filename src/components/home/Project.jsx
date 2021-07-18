@@ -16,10 +16,10 @@ const dummyProject = {
 const API = "https://api.github.com";
 // const gitHubQuery = "/repos?sort=updated&direction=desc";
 
-const Project = ({ heading, username, length, specfic }) => {
+const Project = ({ heading, username, length, specific, ignore }) => {
   const allReposAPI = `${API}/users/${username}/repos?sort=updated&direction=desc`;
-  const specficReposAPI = `${API}/repos/${username}`;
-  const dummyProjectsArr = new Array(length + specfic.length).fill(
+  const specificReposAPI = `${API}/repos/${username}`;
+  const dummyProjectsArr = new Array(length + specific.length).fill(
     dummyProject
   );
 
@@ -30,12 +30,22 @@ const Project = ({ heading, username, length, specfic }) => {
     try {
       // getting all repos
       const response = await axios.get(allReposAPI);
+      repoList = [...response.data];
+      // ignoring specified repos
+      try {
+        repoList = repoList.filter((repo) => (
+          !ignore.includes(repo.name) 
+        ));
+        debugger;
+      } catch (error) {
+        console.error(error.message);
+      }
       // slicing to the length
-      repoList = [...response.data.slice(0, length)];
+      repoList = repoList.slice(0, length);
       // adding specified repos
       try {
-        for (let repoName of specfic) {
-          const response = await axios.get(`${specficReposAPI}/${repoName}`);
+        for (let repoName of specific) {
+          const response = await axios.get(`${specificReposAPI}/${repoName}`);
           repoList.push(response.data);
         }
       } catch (error) {
@@ -47,7 +57,7 @@ const Project = ({ heading, username, length, specfic }) => {
     } catch (error) {
       console.error(error.message);
     }
-  }, [allReposAPI, length, specfic, specficReposAPI]);
+  }, [allReposAPI, ignore, length, specific, specificReposAPI]);
 
   useEffect(() => {
     fetchRepos();
