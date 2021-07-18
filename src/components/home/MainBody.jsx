@@ -3,6 +3,8 @@ import Typist from "react-typist";
 import Container from "react-bootstrap/Container";
 import Jumbotron from "react-bootstrap/Jumbotron";
 
+import "react-typist/dist/Typist.css"
+
 const MainBody = React.forwardRef(
   ({ gradient, title, message, icons }, ref) => {
     return (
@@ -20,7 +22,7 @@ const MainBody = React.forwardRef(
           <h1 ref={ref} className="display-1">
             {title}
           </h1>
-          <Typist className="lead typist" cursor={{ show: false }}>
+          <Typist className="lead typist" cursor={{ show: true, blink: true }}>
             {" "}
             {message}
           </Typist>
