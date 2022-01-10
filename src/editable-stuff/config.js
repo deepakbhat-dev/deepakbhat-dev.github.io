@@ -147,10 +147,16 @@ const experiences = {
   heading: "Professional Experience",
   data: [
     {
+      company: 'granicus',
+      role: 'Software Engineer III',
+      companylogo: require('../assets/img/granicus.png'),
+      date: 'Jan 2022 – Present'
+    },
+    {
       company: 'cerner',
-      role: 'Software Engineer I',
+      role: 'Software Engineer II',
       companylogo: require('../assets/img/cerner.png'),
-      date: 'Sept 2019 – Present'
+      date: 'Sept 2019 – Dec 2021'
     },
     {
       company: 'mphasis',

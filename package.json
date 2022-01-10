@@ -10,7 +10,7 @@
     "url": "https://github.com/deepakbhat-dev"
   },
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.4",
     "bootstrap": "^4.5.2",
     "gh-pages": "^2.2.0",
     "jquery": "^3.5.1",
