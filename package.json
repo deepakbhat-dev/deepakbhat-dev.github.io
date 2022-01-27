@@ -1,13 +1,13 @@
 {
   "name": "developer-portfolio",
   "description": "A personal static portfolio template hosted with GitHub Pages, built to showcase my recent projects.",
-  "homepage": "http://deepakbhat-dev.github.io",
+  "homepage": "http://shreesha5102.github.io",
   "version": "2.0.0",
   "private": true,
   "author": {
-    "name": "Deepak Bhat",
-    "email": "bhatd77@gmail.com",
-    "url": "https://github.com/deepakbhat-dev"
+    "name": "Shreesha Bhat",
+    "email": "shreeshabhat510@gmail.com",
+    "url": "https://github.com/Shreesha5102"
   },
   "dependencies": {
     "axios": "^0.21.4",
