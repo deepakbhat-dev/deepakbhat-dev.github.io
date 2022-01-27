@@ -10,7 +10,7 @@ const mainBody = {
   firstName: "Shreesha",
   middleName: "",
   lastName: "Bhat",
-  message: "Passionate Web Developer.  ",
+  message: "Learn  Live  Code.",
   icons: [
     {
       description: "GitHub",
@@ -40,10 +40,10 @@ const mainBody = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("../editable-stuff/shreesha_profile_pic.jpeg"),
+  imageLink: require("../editable-stuff/shreesha_profile_pic.jpg"),
   imageSize: 350,
   message:
-    "Currently a final year under-graduate at BMS College of Engineering. Passionate about learning new skills that can change the world of technolgy. I'm a gamer, crazy about motor cycles and an enthusiastic traveller.",
+    "Currently a final year under-graduate of Information Sceince and Enginnering at BMS College of Engineering. Passionate about learning new skills that can change the world of technolgy.'Never Give Up' are the words i live by. I'm a gamer, crazy about motor cycles and an enthusiastic traveller.",
   resume: "https://drive.google.com/file/d/1td8CQfgIO8zJpDDpVSD6-QYWUDHaepxq/view?usp=sharing"
 };
 
@@ -76,8 +76,9 @@ const repos = {
   show: true,
   heading: "Recent Projects",
   gitHubUsername: "Shreesha5102",
-  reposLength: 4,
+  reposLength: 0,
   specificRepos: ['HPE-nvme-health-monitoring','Event-Handler','Crossing-Dots-Problem','HangMan-Game'],
+  ignoreRepos: ['Shreesha5102.github.io','Expense-tracker','Devops_Lab']
 };
 
 // LEADERSHIP Section
@@ -88,12 +89,12 @@ const leadership = {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
   images: [
     { 
-      img: require("../editable-stuff/shreesha_profile_pic.jpeg"), 
+      img: require("../editable-stuff/shreesha_profile_pic.jpg"), 
       label: "First slide label", 
       paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
     },
     { 
-      img: require("../editable-stuff/shreesha_profile_pic.jpeg"), 
+      img: require("../editable-stuff/shreesha_profile_pic.jpg"), 
       label: "Second slide label", 
       paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
     }
@@ -136,7 +137,7 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-    "Currently looking for oppurtunities to boost my career. Please feel free to contact me, or just drop a 'Hi' at,",
+    "Currently looking for oppurtunities to kick-off my career. Please feel free to contact me, or just drop a 'Hi' at",
   email: "shreeshabhat.is18@bmsce.ac.in"
 };
 
@@ -145,10 +146,16 @@ const experiences = {
   heading: "Professional Experience",
   data: [
     {
+      
+    },
+    {
       company: 'Hewlett-Packark Enterprises',
       role: 'Project Intern',
       companylogo: require('../assets/img/HPE-logo.png'),
       date: 'April - July 2021'
+    },
+    {
+      
     },
   ]
 }
