@@ -20,7 +20,7 @@ const mainBody = {
     {
       description: "LinkedIn",
       image: "fa-linkedin",
-      url: "https://www.linkedin.com/in/deepakbhat-dev/"
+      url: "https://www.linkedin.com/in/deepakbhat-developer/"
     }
   ]
 };
@@ -147,9 +147,9 @@ const experiences = {
   heading: "Professional Experience",
   data: [
     {
-      company: 'granicus',
+      company: "lowe's",
       role: 'Software Engineer III',
-      companylogo: require('../assets/img/granicus.png'),
+      companylogo: require('../assets/img/lowes.png'),
       date: 'Jan 2022 – Present'
     },
     {
